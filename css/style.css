@@ -1,0 +1,551 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  position: fixed;
+  width: 100%;
+  background-color:#10ac84;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.header1{
+  transition: 0.3s;
+  position: fixed;
+  z-index: 1;
+}
+
+
+.nav{
+  float: right;
+  line-height: 0px;
+  margin: auto;
+  line-height: 25px;
+  transition: 0.8s;
+}
+
+.link{
+  text-decoration: none;
+  color: white ;
+  padding: 7px;
+  line-height: 50px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.link:focus{
+  font-size: 18px;
+  transition: 0.3s;
+}
+.scroll:focus{
+  font-size: 18px;
+  transition: 0.3s;
+}
+.scroll{
+  text-decoration: none;
+  color: white ;
+  padding: 7px;
+  line-height: 25px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  height: 49px;
+  background: transparent;
+  border: none;
+  font-size: 16px ;
+  padding: 10px;
+}
+.scroll:hover{
+  color:  #55efc4;
+  transition: 0.3s;
+}
+.link:hover{
+  color:  #55efc4;
+  transition: 0.3s;
+}
+
+
+.main2{
+  width: 100%;
+  display: flex;
+} 
+
+.fas{
+cursor: pointer;
+  visibility: hidden;
+  float: right;
+  margin-right: 14px;
+  margin-top: 16px;
+  font-size:20px ;
+  color: white;
+
+}
+.txt{
+  margin-top: 50px;
+}
+
+i:focus{
+  animation-duration: 0.5s;
+  animation-name: btn;
+
+}
+ h1{
+  line-height: 50px;
+  margin-left: 5px;
+  float: left;
+  color: white;
+  
+ }
+
+  @keyframes nice{
+    from{
+      top: -400px;
+     
+    }
+    15%{
+      transform: translate( -50% , 6%);
+      left: 50%;
+      top:6%;
+    }
+
+    85%{
+      transform: translate( -50% , 6%);
+      left: 50%;
+      top: 6%;
+    }
+    to{
+      left: 50%;
+      top: -400px;
+      transform: translate( -50% , 400px);
+    }
+  }
+
+ @keyframes btn {
+   from{
+  transform: rotate(0deg);
+  font-size: 21px;
+   }
+   50%{
+    font-size: 30px;
+   }
+   to{
+    transform: rotate(360deg);
+    font-size: initial;
+   }
+ }
+
+ @keyframes txy {
+  from{
+    margin-left:90% ;
+    filter: blur(15px);
+  }
+
+  to{
+    margin-left:15px ;
+    filter: blur(0);
+  }
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+  position: fixed;
+  transition: 0.3s;
+  display: none;
+}
+.overlay1{
+  transition: 0.3s;
+}
+
+.content1{
+  margin-top: 50px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 210px 170px;
+  grid-template-rows: 10px 66.66px 66.66px 66.66px;
+  border-radius: 10px;
+}
+
+.child{
+  margin-left: 10px;
+  grid-row-start:1;
+  grid-column-start: 1;
+
+}
+
+.nice{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 30px;
+  position: fixed;
+  top: -400px;
+  /* left: 50%; */
+  /* transform: translate(-400px, -50%); */
+  text-align: center;
+  animation-duration: 4s;
+  animation-name: nice;
+  padding: 10px;
+  background: rgba(194, 255, 80, 0.438);  
+  border-radius: 7px;
+}
+
+.txt{
+  margin: auto;
+  color: white;
+  width: 500px;
+  font-size: 20px ;
+  padding: 10px;  
+  margin-top: 50px  ;
+
+}
+.fas{
+  font-size: 25px;
+}
+.main2{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+.t1{
+  line-height: 66.66px;
+  margin-left: 20px;
+  grid-row-start:2;
+  grid-column-start: 2;
+  animation-duration: 0.5s;
+  animation-name: txy;
+  color: rgb(255, 254, 254);
+  font-size: 25px;
+}
+.t2{
+  line-height: 66.66px;
+  margin-left: 20px;
+  grid-row-start:3;
+  grid-column-start: 2;
+  animation-duration: 0.5s;
+  animation-name: txy;
+  color: rgb(255, 254, 254);
+  font-size: 25px;
+}
+.t3{
+  line-height: 66.66px;
+  margin-left: 20px;
+  grid-row-start:4;
+  grid-column-start: 2;
+  animation-duration: 0.5s;
+  animation-name: txy;
+  color: rgb(255, 254, 254);
+  font-size: 25px;
+}
+.img1{
+  width: 200px;
+  border-radius: 4px;
+  grid-row-start: 2 ;
+  grid-column-start: 1;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.main1{
+  background-color: #c8d6e5;
+  width: 100%;
+  display:flex ;
+  justify-content: space-around;
+}
+.child1{
+  margin-left: 0;
+  grid-row-start: 1 ;
+  grid-column-start: 1;
+  width: 100px;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  /* position: -webkit-sticky; */
+  /* position: fixed; */
+  bottom: 0;
+  left: 0px;
+}
+.p-footer{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+.img2{
+  width:20%;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: black 10px;
+
+}
+
+.img3{
+  width:20%;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.img2:hover{
+  transition: 0.3s;
+}
+iframe{
+  width: 600px;
+  height: 400px;
+  margin:20px auto 20px;
+  border: solid white 15px 15px;
+  box-shadow: 2px gray;
+  border-radius: 10px ;
+}
+.contact{
+  width:100%;
+  background-color: #c8d6e5;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-section{
+  width: 500px;
+  background: #2ecc71;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+}
+
+form{
+  width: 100%;
+}
+.contactMoi{
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #c8d6e5 ;
+}
+span{
+  color: white;
+}
+.validate{
+  margin-top: 30px;
+  height: 45px;
+  background: #27ae60;
+  color: white;
+  transition: 0.3s;
+}
+
+.validate:hover{
+  background: white;
+  color: #27ae60;
+  transition: 0.3s;
+}
+
+
+
+input{
+  width: 100%;
+  text-align: center;
+  border-radius: 5px ;
+  border: none;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+
+textarea{
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+form{
+  margin: 0 auto;
+}
+@media screen and (max-width:1024px){
+
+  .contact-section{
+    width: 80%;
+    margin: auto auto;
+    border-radius:0; 
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
+  .contact{
+    width: 100%;
+    display: block;
+    
+  }
+  input{
+    width: 100%;
+  }
+  form{
+    margin: 10px auto;
+    width: 90%;
+  }
+  textarea{
+    width: 100%;
+  }
+  iframe{
+    margin:  auto;
+    width: 90%;
+    display: none;  
+
+  }
+  .tit-link{
+    visibility:  hidden;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    border:solid black 2px;
+    
+  }
+  
+  footer{
+    position: relative;
+  }
+
+  .nav{
+    position: fixed;
+    padding-top: 10px;
+    right: -100%;
+    float: right;
+    height:100vh;
+    background-color: #01a3a4;
+    width: 70%;
+    transition: 0.3s;
+    background-color: #1dd1a1;
+    z-index: 1;
+  }
+  
+  .t1{
+    display: block;
+    line-height: 0px;
+    padding: 0;
+    margin-left:10px ;
+    animation-duration: 0.5s;
+    animation-name: txy;
+    color: rgb(255, 254, 254);
+  }
+
+  .contact{
+    display: block;
+  }
+  iframe{
+    width: 90%;
+    height: 40%;
+    margin: auto auto;
+  }
+  .t2{
+    margin: 10px;
+    display: block;
+    padding: 0;
+    margin-left:10px ;
+    line-height: 0px;
+    animation-duration: 0.5s;
+    animation-name: txy;
+    color: rgb(255, 254, 254);
+  }
+  .t3{
+    display: block;
+    padding: 0;
+    margin-left:10px ;
+    line-height: 0px;
+    animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    animation-name: txy;
+    color: rgb(255, 254, 254);
+    margin-bottom:10px ;
+  }
+  .img1{
+    margin-left: 10px;
+    display: block;
+  }
+  .nav1{
+    right: 0;
+  }
+
+  .child1{
+    display: block;
+  }
+  .link{
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+   
+  }
+
+  .scroll{
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 66px;
+  }
+  .fas {
+    visibility : visible;
+    
+  }
+  .fas:focus{
+    animation-duration: 0.5s;
+    animation-name: btn;
+  }
+
+  .nice{
+    left: 1%;
+    text-align: center;
+  }
+
+  .content1{
+    margin-top: 0;
+    background-color:   #c8d6e5;
+    width: 100%; 
+    display: block; 
+    background-color: none;
+  
+  }
+  .main1{
+   
+    background-color: #c8d6e5;
+    width: 100%;
+    padding-bottom: 10px;
+    display: block;
+   
+  }
+
+  .main2{
+   
+    background-color: #ffffff;
+    width: 100%;
+    padding-bottom: 10px;
+    display: block;
+   
+  }
+  .img2{
+    width: 90%;
+    margin-top:10px ;
+    margin-left: 4%;
+    border-radius: 5px;
+   
+  }
+  .txt{
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .overlay{
+    display: initial;
+  }
+  
+}
+
