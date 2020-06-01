@@ -8,6 +8,16 @@
     
     <script src="https://kit.fontawesome.com/ce7f6bbc79.js" crossorigin="anonymous"></script>
     <title>Tony</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151189829-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151189829-1');
+</script>
+
 </head>
 <body>
     
@@ -43,7 +53,7 @@
    
                 <p class="txt">Ma formation et mes expériences professionnelles m'ont permis... détaillez ici les expériences ou les compétences qui vous concernent, que vous avez déjà présentées rapidement dans votre CV... Mais ne détaillez ici que une ou deux expériences ou compétences en relation directe avec le poste qui intéresseront le recruteur.</p><br>
                 
-                <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi ipsam, omnis totam quae eaque suscipit harum expedita, voluptatibus quidem odit nesciunt quia consectetur veniam recusandae incidunt fugit! Blanditiis, asperiores!</p>
+                <p class="txt">Je reste à votre disposition pour de plus amples informations et j'espère pouvoir vous présenter ma motivation de vive voix lors un entretien.</p>
     </div>
     <div class="main2">
         <img class="img2" src="img/dentiste.jpg" alt="">
@@ -70,9 +80,7 @@
             <textarea name="comments" id=""  rows="10" required></textarea><br>
             <input type="submit" class='validate' value=" Envoyer">
             <br>
-           
         </form>
-
     </div>
     </div>
     <h2 class="contactMoi :" ></h2>
@@ -191,7 +199,7 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 "Content-type: text/html; charset=UTF-8" . "\r\n";
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+@mail($email_to,$email_subject,$email_message,$headers);  
 
 header("Refresh:5;url=index.php");
 

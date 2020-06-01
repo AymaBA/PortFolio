@@ -23,11 +23,10 @@ overlay.onclick = function () {
 
 scrll.onclick = function scroll() {
     window.scroll({
-        top:2500,
-        left:0,
+        top: 2500,
+        left: 0,
     });
-   
-  }
+}
 
 
 
@@ -35,17 +34,17 @@ scrll.onclick = function scroll() {
 //     window.scroll({
 //         top:2500,
 //         left:0,
-        
+
 //     });
 // }
 
-scrllTop.onclick = function (){
+scrllTop.onclick = function () {
     window.scroll({
-        top:0,
-        left:0,
+        top: 0,
+        left: 0,
 
     });
-    
+
 }
 
 
